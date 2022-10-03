@@ -2,7 +2,7 @@
 //
 //     final rickSimpleList = rickSimpleListFromMap(jsonString);
 
-import 'package:meta/meta.dart';
+
 import 'dart:convert';
 
 RickSimpleList rickSimpleListFromMap(String str) => RickSimpleList.fromMap(json.decode(str));

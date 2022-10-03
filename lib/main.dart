@@ -1,6 +1,5 @@
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
-import 'package:testrick/providers/characer_api_http.dart';
 import 'package:testrick/screens/menu.dart';
 import 'package:testrick/widgets/wigets.dart';
 

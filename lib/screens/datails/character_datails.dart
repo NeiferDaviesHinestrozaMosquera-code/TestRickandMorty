@@ -14,7 +14,7 @@ class CharacterDatailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
     appBar: AppBar(
-      backgroundColor: Color.fromARGB(255, 52, 238, 10),
+      backgroundColor: const Color.fromARGB(255, 52, 238, 10),
       elevation: 0,
       title: Text(datailsModel.name) ,
       centerTitle: true,
@@ -22,14 +22,14 @@ class CharacterDatailsScreen extends StatelessWidget {
         body:SingleChildScrollView(
           child: Column(
             children: [
-              SizedBox(height: 20,),
+              const SizedBox(height: 20,),
                  Hero(
                         tag: datailsModel.name,
                          child: Center(
                            child: Container(
                             decoration: BoxDecoration(
                               borderRadius:  BorderRadius.circular(10),
-                              boxShadow: [BoxShadow(color:Color(0xff2c3e50).withOpacity(0.2),
+                              boxShadow: [BoxShadow(color:const Color(0xff2c3e50).withOpacity(0.2),
                               blurRadius: 10,
                               spreadRadius: 5,
                               )
@@ -37,81 +37,81 @@ class CharacterDatailsScreen extends StatelessWidget {
                              child: ClipRRect(
                               borderRadius:BorderRadius.circular(10) ,
                               child: CachedNetworkImage(imageUrl: datailsModel.image, height: 250,
-                              placeholder: (context, url) => Center(
+                              placeholder: (context, url) => const Center(
                                 child: CircularProgressIndicator(color: Color(0xff2c3e50) ),
                               ),
-                              errorWidget: (context, url, error) =>  Icon(Icons.error),
+                              errorWidget: (context, url, error) =>  const Icon(Icons.error),
                       ),
                     ),
                   ),
                 )
               ),
 
-                SizedBox(
+                const SizedBox(
                 height: 20,
               ),
               Text(datailsModel.id.toString(),
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.black54,
                 fontSize: 20,
                 fontWeight: FontWeight.bold
                 ),
               ),
 
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Text(datailsModel.name,
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.black54,
                 fontSize: 20,
                 fontWeight: FontWeight.bold
                 ),
               ),
 
-              SizedBox(height: 18,),
+              const SizedBox(height: 18,),
               Text (datailsModel.status,
-             style: TextStyle(
+             style: const TextStyle(
                 color: Colors.black54,
                 fontSize: 15,
                 fontWeight: FontWeight.bold)
               ),
 
-               SizedBox(height: 9,),
+               const SizedBox(height: 9,),
               Text (datailsModel.species.toString(),
-             style: TextStyle(
+             style: const TextStyle(
                 color: Colors.black54,
                 fontSize: 15,
                 )
               ),
 
-              SizedBox(height: 9,),
+              const SizedBox(height: 9,),
               Text (datailsModel.gender.toString(),
-             style: TextStyle(
+             style: const TextStyle(
                 color: Colors.black54,
                 fontSize: 15,
                 )
               ),
 
-              SizedBox(height: 9,),
+              const SizedBox(height: 9,),
               Text (datailsModel.created.toString(),
-             style: TextStyle(
+             style: const TextStyle(
                 color: Colors.black54,
                 fontSize: 15,
                 )
               ),
 
-              SizedBox(height: 9,),
+              const SizedBox(height: 9,),
               Text (datailsModel.origin.toString(),
-             style: TextStyle(
+             style: const TextStyle(
                 color: Colors.black54,
                 fontSize: 15,
                 )
               ),
 
-              SizedBox(height: 9,),
+              const SizedBox(height: 9,),
               Text (datailsModel.url.toString(),
-             style: TextStyle(
+             style: const TextStyle(
                 color: Colors.black54,
                 fontSize: 15,
                 )

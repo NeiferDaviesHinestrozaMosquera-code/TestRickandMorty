@@ -4,6 +4,7 @@ import 'package:testrick/widgets/character_fetch.dart';
 
 
 class CharactersScreen extends StatelessWidget {
+  const CharactersScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
